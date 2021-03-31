@@ -78,6 +78,11 @@ class Game{
             text(allPlayers[plr].name + "'s Score: " + allPlayers[plr].score,position,30);
 
             if(allPlayers[plr].score >= 50){
+                fill(255); 
+                stroke("black"); 
+                strokeWeight(4); 
+                textSize(50); 
+                text("The Winner is "+allPlayers[plr].name,210,100);
                 game.update(2);
             }
         }
